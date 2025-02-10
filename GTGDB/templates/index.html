@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>Add a new guess</h2>
+<h2>Add a new review</h2>
 <div class="container">
 
-    <p>Welcome to GuessThe.Game Database (aka. GTGDB). This website is dedicated to the hard working Year 12 SE students of 2024-2025. The last 5 minutes of class are always a flurry of excitement and hard work. They open <a href="https://guessthe.game/">GuessThe.Game</a> and scream their suggestions at the host. Let's start tracking their progress.</p>
+    <p>Review things here!</p>
 
     {% if session['username'] %}
         <br>
@@ -13,7 +13,7 @@
         <!-- -------------------- -->
         <!-- New code starts here -->
         <!-- -------------------- -->
-        <a href="/add"><button>Add guess</button></a>
+        <a href="/add"><button>Add review</button></a>
         <!-- -------------------- -->
         <!-- New code ends here   -->
         <!-- -------------------- -->
@@ -27,7 +27,7 @@
 
     <thead>
         <th>Date</th>
-        <th>User who guessed</th>
+        <th>User who reviewed</th>
         <th>Game</th>
         <th>Score</th>
     </thead>

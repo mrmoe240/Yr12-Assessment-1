@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>Add a new guess</h2>
+<h2>Add a new review</h2>
 <form action="/add" method="post">
     <label>Date: </label>
     <input type="date" name="date" id="date">
@@ -9,6 +9,6 @@
     <input type="text" name="game" id="game">
     <label>Score: </label>
     <input type="number" name="score" id="score">
-    <input type="submit" value="Add guess">
+    <input type="submit" value="Add review">
 </form>
 {% endblock %}

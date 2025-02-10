@@ -15,7 +15,7 @@ def Login():
     # They sent us data, get the username and password
     # then check if their details are correct.
     if request.method == "POST":
-        username = request.form['username']
+        username = request.form['username'] 
         password = request.form['password']
 
         # Did they provide good details
@@ -82,4 +82,4 @@ def Add():
 ### New code ends here
 ##################################
 
-app.run(debug=True, port=5000)
+app.run(debug=True, port=80)
