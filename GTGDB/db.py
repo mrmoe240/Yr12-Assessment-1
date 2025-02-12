@@ -50,9 +50,7 @@ def RegisterUser(username, password):
 
     return True
 
-##################################
-### New code starts here
-##################################
+
 def AddGuess(user_id, date, game, score):
    
     # Check if any boxes were empty
@@ -67,6 +65,3 @@ def AddGuess(user_id, date, game, score):
 
     return True
 
-##################################
-### New code ends here
-##################################

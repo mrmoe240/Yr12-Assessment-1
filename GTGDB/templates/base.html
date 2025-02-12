@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- This line blocks cross site scripting -->
+
     <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
 
     <title>My review website!</title>
@@ -18,31 +18,27 @@
 
     <h1 class="banner">My review website!</h1>
 
-    <!-- Include a navigation menu -->
+
     <nav>
         <a href="/">Home</a>
-        <!-- -------------------- -->
-        <!-- New code starts here -->
-        <!-- -------------------- -->
+
         {% if not session['username'] %}
             <a href="/login">Login</a>
             <a href="/register">Register</a>
         {% else %}
             <a href="/logout">Logout</a>
         {% endif %}
-        <!-- -------------------- -->
-        <!-- New code ends here   -->
-        <!-- -------------------- -->
+
     </nav>
 
-    <!-- This section will contain the page content -->
+
     <main>
         {% block content %}
 
         {% endblock %}
     </main>
 
-    <!-- This script will be for the service worker -->
+
     <script src="static/js/app.js"></script>
 
 
