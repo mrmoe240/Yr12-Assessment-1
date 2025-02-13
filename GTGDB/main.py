@@ -71,7 +71,15 @@ def Add():
 
     return render_template("add.html")
 
+@app.route("/delete", methods=["GET","POST"])
+def delete():
 
+    user_id = session['id']
+    date = request.form['date']
+    game = request.form['game']
+    score = request.form['score']
+    review = request.form['review']
+    db.delete(user_id, date, game, score, review)
 
 
 app.run(debug=True, port=80)

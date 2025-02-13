@@ -65,3 +65,8 @@ def AddGuess(user_id, date, game, score, review):
 
     return True
 
+
+def delete(user_id, date, game, score, review):
+    line = db.execute("SELECT * FROM guesses WHERE user_id=?", (user_id,)).fetchone()
+    db = GetDB()
+    db.execute(f"DELETE FROM guesses WHERE user_id='({line})';")

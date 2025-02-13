@@ -27,6 +27,7 @@
         <th>Game</th>
         <th>Review</th>
         <th>Score</th>
+        <th>Delete</th>
     </thead>
 
     <tbody>
@@ -37,6 +38,7 @@
             <td>{{ guess['game'] }}</td>
             <td>{{ guess['review']}}</td>
             <td>{{ guess['score'] }}</td>
+            <td><a href="/delete"><button>Add review</button></a></td>
         </tr>
         {% endfor %}
     </tbody>
