@@ -38,7 +38,7 @@
             <td>{{ guess['game'] }}</td>
             <td>{{ guess['review']}}</td>
             <td>{{ guess['score'] }}</td>
-            <td><a href="/delete"><button>Add review</button></a></td>
+            <td><input type="button" onclick="delete(id)" value="delete" /></td>
         </tr>
         {% endfor %}
     </tbody>
