@@ -64,9 +64,10 @@ def Add():
         date = request.form['date']
         game = request.form['game']
         score = request.form['score']
+        review = request.form['review']
 
         # Send the data to add our new guess to the db
-        db.AddGuess(user_id, date, game, score)
+        db.AddGuess(user_id, date, game, score, review,)
 
     return render_template("add.html")
 
